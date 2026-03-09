@@ -1,0 +1,3 @@
+The balance is now: $831.61
+There was 3 deposits and 3 withdrawals.
+The total interest earned is $1.61
