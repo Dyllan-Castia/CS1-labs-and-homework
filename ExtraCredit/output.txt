@@ -1,0 +1,9 @@
+The bill includes:
+0 De Anza Burger(s) for $0.00
+2 Bacon Cheeseburger(s) for $11.50
+0 Mushroom Swiss Burger(s) for $0.00
+3 Western Burger(s) for $17.85
+0 Don Cali Burger(s) for $0.00
+Subtotal is: $29.35
+Tax is: $2.94
+Total is: $2.94
