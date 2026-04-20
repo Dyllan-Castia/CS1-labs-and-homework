@@ -21,7 +21,9 @@ int main() {
     int array[SIZE] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; //initialize array contents
 
     //vv Call function and assign result pointer to newArray vv
-    int* newArray = duplicateArray(array, SIZE);
+    int* newArray = nullptr;
+    newArray = duplicateArray(array, SIZE); 
+    //^^ FIX ME - init to nullptr check for valid in function
 
     //vv Display results vv
     cout << "Original array: ";
@@ -36,7 +38,7 @@ int main() {
         cout << newArray[index] << " ";
     }
     
-    delete[] newArray; //Prevent Memory leak by OS reclaim
+    delete[] newArray; //Free dynamically allocated memory
 
    return 0;
 }
@@ -44,9 +46,15 @@ int main() {
 int* duplicateArray(int arrayArg[], int size) {
     int* copyptr = new int[size];
 
+    if (copyptr == nullptr) {
+        cout << "Not enough memory!" << endl;
+        return 0;
+    }
+
     for (int i = 0; i < size; i++) {
         copyptr[i] = arrayArg[i];
     }
+
     return copyptr;
 }
 
